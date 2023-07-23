@@ -69,8 +69,8 @@ const CONFIG = {
     config: {
       repo: "gudfhr95/blog",
       "repo-id": "R_kgDOJ-yvVg",
-      category: "Announcements",
-      "category-id": "DIC_kwDOJ-yvVs4CYE8U",
+      category: "Giscus",
+      "category-id": "DIC_kwDOJ-yvVs4CYFCD",
       mapping: "pathname",
       strict: "1",
       "reactions-enabled": "1",

@@ -1,8 +1,7 @@
-import {CONFIG} from "site.config"
-import {useEffect} from "react"
+import { CONFIG } from "site.config"
+import { useEffect } from "react"
 import useScheme from "src/hooks/useScheme"
-import {useRouter} from "next/router"
-
+import { useRouter } from "next/router"
 
 const Giscus: React.FC = () => {
   const [scheme] = useScheme()
@@ -27,9 +26,7 @@ const Giscus: React.FC = () => {
       anchor.innerHTML = ""
     }
   }, [scheme, router])
-  return (
-      <div id="comments"/>
-  )
+  return <div id="comments" />
 }
 
 export default Giscus

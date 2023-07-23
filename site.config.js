@@ -30,8 +30,20 @@ const CONFIG = {
   lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ["Blog", "블로그", "Developer", "개발자", "Algorithm", "알고리즘",
-      "System Design", "시스템 디자인", "Architecture", "아키텍처", "Book", "책"],
+    keywords: [
+      "Blog",
+      "블로그",
+      "Developer",
+      "개발자",
+      "Algorithm",
+      "알고리즘",
+      "System Design",
+      "시스템 디자인",
+      "Architecture",
+      "아키텍처",
+      "Book",
+      "책",
+    ],
   },
 
   // notion configuration (required)
@@ -52,14 +64,6 @@ const CONFIG = {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
   },
-  utterances: {
-    enable: true,
-    config: {
-      repo: "morethanmin/morethan-log",
-      "issue-term": "og:title",
-      label: "💬 Utterances",
-    },
-  },
   giscus: {
     enable: true,
     config: {
@@ -73,11 +77,11 @@ const CONFIG = {
       "emit-metadata": "0",
       "input-position": "top",
       lang: "ko",
-      loading: "lazy"
-    }
+      loading: "lazy",
+    },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
   revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
 
-module.exports = {CONFIG}
+module.exports = { CONFIG }

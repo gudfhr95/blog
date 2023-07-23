@@ -38,6 +38,9 @@ dependencies:
   notion-utils:
     specifier: ^6.16.0
     version: 6.16.0
+  prismjs:
+    specifier: ^1.29.0
+    version: 1.29.0
   react:
     specifier: ^18.2.0
     version: 18.2.0

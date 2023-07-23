@@ -60,6 +60,22 @@ const CONFIG = {
       label: "💬 Utterances",
     },
   },
+  giscus: {
+    enable: true,
+    config: {
+      repo: "gudfhr95/blog",
+      "repo-id": "R_kgDOJ-yvVg",
+      category: "Announcements",
+      "category-id": "DIC_kwDOJ-yvVs4CYE8U",
+      mapping: "pathname",
+      strict: "1",
+      "reactions-enabled": "1",
+      "emit-metadata": "0",
+      "input-position": "top",
+      lang: "ko",
+      loading: "lazy"
+    }
+  },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
   revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
